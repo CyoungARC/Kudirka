@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kudirka / Vigilant Incident — Complete Timeline, 23 November 1970</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f9f8f4;color:#1a1a18;line-height:1.5}
+header{padding:28px 32px 20px;border-bottom:1px solid #e0ded6}
+header h1{font-size:20px;font-weight:600;color:#1a1a18;margin-bottom:4px}
+header p{font-size:13px;color:#5f5e5a}
+.container{max-width:860px;margin:0 auto;padding:24px 32px 48px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#5f5e5a;margin-bottom:20px}
+.leg-item{display:flex;align-items:center;gap:5px}
+.leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.filter-btn{padding:5px 13px;border-radius:20px;border:1px solid #d3d1c7;background:#fff;color:#5f5e5a;font-size:12px;cursor:pointer;transition:all .15s;font-family:inherit}
+.filter-btn:hover{border-color:#888780;color:#1a1a18}
+.filter-btn.active{color:#1a1a18;border-color:#888780;background:#f1efe8}
+.filter-btn.f-morning.active{background:#E1F5EE;border-color:#0F6E56;color:#085041}
+.filter-btn.f-afternoon.active{background:#E6F1FB;border-color:#185FA5;color:#0C447C}
+.filter-btn.f-evening.active{background:#FAEEDA;border-color:#854F0B;color:#633806}
+.filter-btn.f-night.active{background:#FCEBEB;border-color:#A32D2D;color:#791F1F}
+.filter-btn.f-key.active{background:#EEEDFE;border-color:#534AB7;color:#3C3489}
+.filter-btn.f-ethics.active{background:#FBEAF0;border-color:#993556;color:#72243E}
+.spine{position:relative;padding-left:96px}
+.spine-line{position:absolute;left:84px;top:0;bottom:0;width:1px;background:#e0ded6}
+.phase-label{font-size:11px;color:#888780;text-transform:uppercase;letter-spacing:.07em;margin:20px 0 10px -96px;padding-left:4px;font-weight:500}
+.entry{position:relative;margin-bottom:7px;display:flex;align-items:flex-start;transition:opacity .2s}
+.entry.hidden{display:none}
+.time-col{position:absolute;left:-92px;width:86px;text-align:right;font-size:11px;color:#888780;line-height:1;padding-top:14px}
+.dot{position:absolute;left:-12px;width:10px;height:10px;border-radius:50%;border:2px solid;margin-top:11px;background:#f9f8f4;flex-shrink:0}
+.dot.morning{border-color:#0F6E56;background:#E1F5EE}
+.dot.afternoon{border-color:#185FA5;background:#E6F1FB}
+.dot.evening{border-color:#854F0B;background:#FAEEDA}
+.dot.night{border-color:#A32D2D;background:#FCEBEB}
+.dot.key{border-color:#534AB7;background:#EEEDFE;width:12px;height:12px;margin-top:10px;left:-13px}
+.dot.ethics{border-color:#993556;background:#FBEAF0;width:12px;height:12px;margin-top:10px;left:-13px}
+.card{flex:1;border-radius:7px;border:1px solid #e0ded6;background:#fff;padding:9px 13px;cursor:pointer;transition:border-color .15s}
+.card:hover{border-color:#b4b2a9}
+.card.morning{border-left:3px solid #0F6E56}
+.card.afternoon{border-left:3px solid #185FA5}
+.card.evening{border-left:3px solid #854F0B}
+.card.night{border-left:3px solid #A32D2D}
+.card.key{border-left:3px solid #534AB7;background:#fdfcfe}
+.card.ethics{border-left:3px solid #993556;background:#fefafc}
+.card-title{font-size:13px;font-weight:500;color:#1a1a18;line-height:1.35}
+.card-actors{font-size:11px;color:#888780;margin-top:2px}
+.ethics-label{display:inline-block;font-size:10px;font-weight:500;background:#FBEAF0;color:#993556;border:1px solid #F4C0D1;border-radius:3px;padding:1px 6px;margin-top:4px;letter-spacing:.02em}
+.card-detail{font-size:12px;color:#3d3d3a;margin-top:7px;line-height:1.6;border-top:1px solid #f1efe8;padding-top:7px;display:none}
+.card.open .card-detail{display:block}
+.ethics-note{background:#fdf4f7;border-left:2px solid #D4537E;padding:7px 10px;margin-top:8px;border-radius:0 4px 4px 0;font-size:12px;color:#3d3d3a;line-height:1.5}
+.expand-hint{font-size:11px;color:#b4b2a9;margin-top:3px}
+.card.open .expand-hint{display:none}
+footer{text-align:center;font-size:11px;color:#b4b2a9;padding:24px;border-top:1px solid #e0ded6;margin-top:24px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Kudirka / Vigilant Incident — Complete Timeline</h1>
+  <p>Monday, 23 November 1970 &nbsp;&middot;&nbsp; Source: Clyde R. Mann, "Asylum Denied: The Vigilant Incident," Naval War College Review / ILS Vol. 62 (1980). Click any entry to expand. Pink entries highlight leadership ethics and decision-making failures.</p>
+</header>
+<div class="container">
+
+<div class="legend">
+  <div class="leg-item"><div class="leg-dot" style="background:#0F6E56"></div>Morning setup</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#185FA5"></div>Afternoon escalation</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#854F0B"></div>Evening decision chain</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#A32D2D"></div>Night &mdash; return</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#534AB7;width:10px;height:10px"></div>Key decision point</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#993556;width:10px;height:10px"></div>Leadership ethics failure</div>
+</div>
+
+<div class="filters">
+  <button class="filter-btn active" data-filter="all">All events</button>
+  <button class="filter-btn f-morning" data-filter="morning">Morning</button>
+  <button class="filter-btn f-afternoon" data-filter="afternoon">Afternoon</button>
+  <button class="filter-btn f-evening" data-filter="evening">Evening</button>
+  <button class="filter-btn f-night" data-filter="night">Night</button>
+  <button class="filter-btn f-key" data-filter="key">Key decisions</button>
+  <button class="filter-btn f-ethics" data-filter="ethics">Ethics failures</button>
+</div>
+
+<div class="spine">
+<div class="spine-line"></div>
+
+<div class="phase-label">Pre-incident &mdash; institutional failure</div>
+
+<div class="entry" data-phase="ethics">
+  <div class="time-col">Background</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">No Coast Guard asylum regulation exists &mdash; Navy had one since the 1890s</div>
+    <div class="card-actors">USCG institutional leadership</div>
+    <div class="ethics-label">institutional failure</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">On 23 November 1970 there was no Coast Guard regulation governing how to handle asylum requests. The U.S. Navy had issued Regulation 0621 &mdash; Granting of Asylum &mdash; following the 1894 Salvadorean refugees case aboard the USS Bennington. That regulation, while conservative, gave Navy commanding officers at least a framework. The Coast Guard had nothing equivalent. Every officer in the chain on 23 November was therefore operating without institutional guidance, and no one in the service's history had thought to develop it.
+      <div class="ethics-note">Ethics dimension: Institutional leadership failed to equip field commanders with doctrine for a foreseeable scenario. When the incident occurred, individuals were blamed &mdash; but the absence of doctrine was an organizational failure that predated them all.</div>
+    </div>
+  </div>
+</div>
+
+<div class="phase-label">Morning &mdash; setup</div>
+
+<div class="entry" data-phase="morning">
+  <div class="time-col">8:00 am</div>
+  <div class="dot morning"></div>
+  <div class="card morning">
+    <div class="card-title">U.S. delegation boards Vigilant</div>
+    <div class="card-actors">Eustis, Gordon, Brieze, Obolensky, Lt. Morehouse</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Five-person delegation from New Bedford fishing industry and NMFS boards at New Bedford. Lt. Leo Morehouse from USCG HQ Washington attends as observer. Vigilant gets underway at 8:49 am.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="morning">
+  <div class="time-col">10:30 am</div>
+  <div class="dot morning"></div>
+  <div class="card morning">
+    <div class="card-title">Vigilant moors alongside Sovetskaya Litva</div>
+    <div class="card-actors">Eustis, Soviet fleet commanders</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Ships moor port-to-starboard 1 mile off Martha's Vineyard &mdash; within U.S. territorial waters. Fishing conference begins. Eustis boards Soviet ship. Crew exchanges cigarettes and magazines across the rail. Some Soviets draw fingers across their necks in response to joking suggestions they come aboard &mdash; unclear whether in jest.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="morning key">
+  <div class="time-col">11:00 am</div>
+  <div class="dot key"></div>
+  <div class="card key">
+    <div class="card-title">First overture of defection &mdash; Kudirka signals Lundberg</div>
+    <div class="card-actors">Kudirka, Lt. Lundberg, Lt. Cmdr. Pakos</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Kudirka watches Soviet political officer punish two sailors for picking up American magazines and decides to defect. Approaches Lundberg on bridge wing: "I want political asylum... gestapo, gestapo." Pakos notified. Pakos secretly rigs a boarding ladder on the starboard bow. Eustis recalled from Soviet ship via ruse messenger at 12:45 pm. Eustis concludes without encouragement an attempt to defect is inevitable.</div>
+  </div>
+</div>
+
+<div class="phase-label">Midday &mdash; first messages sent</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">12:43 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Vigilant sends first coded message to Boston (80% probability of defection)</div>
+    <div class="card-actors">Pakos &rarr; First District HQ</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">"Estimate 80% probability one crewman from Soviet mother ship will attempt defection to Vigilant. Defection was not enticed... If escape detected foresee major problems if delegation still aboard. Req. advice." Message received at First District at 12:49 pm.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">1:07 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Brown returns from lunch, reads message; Flanagan gives correct legal advice</div>
+    <div class="card-actors">Brown, District Legal Officer Flanagan</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Brown consults Flanagan (District Legal Officer) who advises: if the man defects, turn him over to State Department or Immigration. Brown directs message forwarded to Commandant. Message received at USCG HQ Washington at 1:28 pm. This is the one correct legal instinct stated clearly &mdash; and it is subsequently overridden by everyone above Flanagan.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon ethics">
+  <div class="time-col">1:18 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Hammond and Brown focus only on force question &mdash; never ask about asylum policy; Chief Counsel never consulted</div>
+    <div class="card-actors">Brown &rarr; Hammond &rarr; Dahlgren</div>
+    <div class="ethics-label">failure of scope</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">When Brown calls Hammond (Chief of Operations, USCG HQ), both men discuss only how much force the Vigilant can use to retrieve a man swimming between ships. They explicitly do not discuss what to do if the defector gets aboard by any other means. Hammond does not contact the Coast Guard's Chief Counsel for legal advice &mdash; despite this being precisely the question the Chief Counsel exists to answer. Hammond delegates to Dahlgren (only 6 weeks in post, no State Dept. experience) rather than taking personal charge.
+      <div class="ethics-note">Ethics dimension: Senior leadership narrowed the question to tactical mechanics and ignored the strategic and legal question entirely. The Chief Counsel was never consulted at any command level throughout the entire incident.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon key ethics">
+  <div class="time-col">1:20 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Brown calls Ellis at home &mdash; Ellis says return him; Brown treats advice as orders</div>
+    <div class="card-actors">Brown &rarr; Ellis (on sick leave, not in chain of command)</div>
+    <div class="ethics-label">unlawful command influence</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Ellis (convalescing from hernia surgery, not in the chain of command) tells Brown: "If we get the defector, we should give him back." He is concerned the defection will disrupt fishing talks. Brown tells a staff officer immediately after: "We are going to return the man." Time: 1:30 pm. Ellis would later insist he was only offering advice. The Board of Investigation and Commandant found that Ellis gave advice he knew would be treated as orders, and that Brown failed to exercise his independent authority as Acting District Commander.
+      <div class="ethics-note">Ethics dimension: Two distinct failures. Ellis &mdash; a flag officer on leave, outside the chain of command, with no authority &mdash; made a consequential decision on a matter requiring State Dept. involvement, without informing himself of applicable law or policy. Brown &mdash; the lawful Acting District Commander &mdash; abdicated his command authority to a convalescent superior with no jurisdiction over the matter.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">1:26 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Vigilant's 12:43 message forwarded to USCG HQ Washington</div>
+    <div class="card-actors">First District &rarr; Commandant's office</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Message received at HQ at 1:28 pm. Hammond takes copy to VADM Sargent (Asst. Commandant). They discuss. Hammond returns to his office without contacting the Chief Counsel for legal guidance on asylum policy.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">1:30 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">First District sends instructions to Vigilant &mdash; not received until 3:36 pm</div>
+    <div class="card-actors">Brown &rarr; Vigilant</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">"Take no direct or overt action. However be prepared to launch small boat immediately. Get CDR Eustis back aboard using any pretext. COMDT notified. If man goes in water give USSR every opportunity to recover." Message not received by Vigilant until 3:36 pm &mdash; two hours late due to communications delays.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">1:38 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Vigilant's 12:43 message sent to State Dept. &mdash; ships' location in territorial waters never mentioned</div>
+    <div class="card-actors">USCG HQ &rarr; State Dept.</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Dahlgren makes four calls over 1 hour 45 minutes before reaching the correct State Dept. officer. He was directed only to ask about retrieving a man from the water &mdash; not to inquire about U.S. asylum policy. Neither Killham nor Dahlgren are told the ships are in U.S. territorial waters &mdash; a fact that would have materially changed the legal analysis.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">2:00 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Kudirka throws cigarette pack with hidden note to Lundberg</div>
+    <div class="card-actors">Kudirka &rarr; Lundberg</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">"My dear Comrade I will up down of russians ship and go with you together. If it is a possible please give me signal... I up down in the time when the conference is End, and your delegats go into your ships a Board!" Eustis recalled to Vigilant again via ruse messenger.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">2:23 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Vigilant sends second message requesting standby boat &mdash; crypto failures delay 4+ hours</div>
+    <div class="card-actors">Eustis &rarr; First District</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Requests 44-foot lifeboat from Gay Head CG Station. Due to crypto failures the message takes 8 transmission attempts and is not received at First District until 6:38 pm. The 44-footer is never dispatched. USCG HQ Washington is never informed of this second message.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">2:30 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Conference in Brown's office &mdash; staff consensus is to retain Kudirka; Brown defers</div>
+    <div class="card-actors">Brown, Murphy, Curry, Flanagan</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Staff discuss what to do if defector gets aboard. Consensus: final decision should come from the Commandant or State Dept. Flanagan again argues the defector should be kept aboard and turned over to State or INS. Brown will not act on this without higher guidance &mdash; the second time Flanagan gives the legally correct advice and the second time it is set aside.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">2:45 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Dahlgren finally reaches Killham at State Dept. after four calls</div>
+    <div class="card-actors">Dahlgren &rarr; Killham (Soviet Union Affairs)</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Killham asks for time to read the Vigilant message. He receives it at 3:00 pm. Killham is not told ships are in U.S. territorial waters. His focus is on the force question and whether the defection is a Soviet provocation &mdash; because that is the only question Dahlgren was authorized to ask.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon key ethics">
+  <div class="time-col">3:15 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Killham gives only search-and-rescue guidance &mdash; never explicitly says hold the defector</div>
+    <div class="card-actors">Killham &rarr; Dahlgren</div>
+    <div class="ethics-label">failure to advise</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Killham advises: Coast Guard can exercise search and rescue if man is in the water. State can offer no further advice until defector is actually aboard and State is notified. Killham later testifies he could not imagine anyone returning a defector without first getting State Dept. advice &mdash; but he never said this to Dahlgren. He identifies the right question (what to do if man is in the Vigilant) but explicitly declines to answer it. Neither man discusses what happens if Kudirka jumps directly to the ship rather than into the water.
+      <div class="ethics-note">Ethics dimension: Killham identified the correct question &mdash; what to do if the defector is aboard &mdash; but declined to answer it, saying State needed more information first. He then briefed only his assistant and went home, leaving no one at State with standing instructions. The gap between what Killham understood and what he communicated was the critical State Dept. failure.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">3:30 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Brown calls Ellis again &mdash; Ellis unmoved by staff disagreement</div>
+    <div class="card-actors">Brown &rarr; Ellis</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Brown informs Ellis his staff officers disagree with the return decision. Ellis: his mind is not changed by the staff consensus "because there were no known new facts." The Commandant's ruling later cites Ellis's stubbornness in the face of qualified dissent as a specific aggravating factor.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">3:36 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Vigilant finally receives Brown's 1:30 pm instructions (two hours late)</div>
+    <div class="card-actors">First District &rarr; Vigilant</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Eustis reads "no overt action / give USSR every opportunity to recover" message. Soviet fleet commander requests to tour the Vigilant before unmooring. Eustis feels obliged to invite approximately 12 Soviet officers aboard.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon ethics">
+  <div class="time-col">~4:00 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Eustis invites ~12 Soviet officers to tour Vigilant &mdash; creates the entanglement that drives the return</div>
+    <div class="card-actors">Eustis, Soviet Fleet Commander</div>
+    <div class="ethics-label">discretionary error</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">When the Soviet Fleet Commander expresses a desire to tour the Vigilant after the conference, Eustis feels "obliged" to honor the request and invites approximately 12 Soviet officers aboard. This decision &mdash; entirely discretionary &mdash; directly produces two downstream problems: (1) Soviet officers are physically present on the Vigilant when Kudirka jumps at 4:20 pm, including acting Litva Commander Burkal who Kudirka immediately runs into; and (2) the presence of Soviets aboard the ship becomes one of Ellis's stated reasons for returning Kudirka.
+      <div class="ethics-note">Ethics dimension: A commander who knows a sensitive situation is developing has an obligation to control his ship's environment. Inviting 12 foreign nationals aboard under these circumstances compromised Eustis's freedom of action and handed Ellis a rationale for the return that otherwise would not have existed.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">3:45 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Dahlgren calls Brown &mdash; relays Killham's guidance; State wants to be notified when man is aboard</div>
+    <div class="card-actors">Dahlgren &rarr; Brown</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Brown told of Killham's search-and-rescue advice and that State wants to be notified when man is aboard. Dahlgren briefs Hammond. No discussion of returning defector to Soviets in this conversation.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon ethics">
+  <div class="time-col">4:12 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Hammond tells Brown to go home &mdash; both depart without assigning accountability</div>
+    <div class="card-actors">Brown &rarr; Hammond; both depart</div>
+    <div class="ethics-label">abandonment of watch</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Brown calls Hammond and reports nothing further from Vigilant. Hammond sees no reason Brown should not catch his regular commuter train. Brown departs at 4:30 pm without assigning anyone on his staff responsibility for the case. Mann explicitly notes: "Brown did not assign anyone on his staff, and no one assumed, responsibility with respect to this case." Kudirka jumps 8 minutes later at 4:20 pm &mdash; while both senior officers are en route home.
+      <div class="ethics-note">Ethics dimension: Both senior officers departed knowing a potentially significant defection was developing, leaving the case in the hands of a duty officer with no background on the matter. A commanding officer does not leave a sensitive developing situation unassigned. Hammond's instruction to "call when the defector is aboard" was predicated on an event that had already occurred minutes earlier &mdash; but neither man knew it yet.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon key">
+  <div class="time-col">4:20 pm</div>
+  <div class="dot key"></div>
+  <div class="card key">
+    <div class="card-title">Kudirka jumps &mdash; lands on Vigilant's bridge deck</div>
+    <div class="card-actors">Kudirka, Pakos, Eustis</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Pakos shrugs shoulders at Kudirka on Soviet deck. Kudirka jumps, lands on a lower level, climbs to bridge, embraces Pakos: "comrade!" Pakos quickly moves him to the watchstander's head. Three Soviet officers still aboard Vigilant from the tour. Eustis, unaware of the specifics of U.S. asylum policy, assumes Kudirka will be granted asylum. Morehouse (USCG HQ observer) advises Eustis to contact Washington.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="afternoon">
+  <div class="time-col">4:30 pm</div>
+  <div class="dot afternoon"></div>
+  <div class="card afternoon">
+    <div class="card-title">Dahlgren calls Killham &mdash; no further news; Killham briefs assistant only; Brown leaves office</div>
+    <div class="card-actors">Dahlgren &rarr; Killham; Killham &rarr; Mainland; Brown departs</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Killham briefs his assistant Mainland (Soviet Desk duty officer for the evening). Neither Killham nor Mainland brief the State Dept. Operations Center watch officer. Brown leaves his office at 4:30 pm without assigning anyone responsibility for the case. No one assumes it.</div>
+  </div>
+</div>
+
+<div class="phase-label">Evening &mdash; the decision chain</div>
+
+<div class="entry" data-phase="evening key ethics">
+  <div class="time-col">5:15 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Eustis calls Ellis (again) &mdash; bypasses proper chain; Ellis again directs return; acknowledges he is interjecting himself</div>
+    <div class="card-actors">Eustis &rarr; Ellis (still not in chain of command)</div>
+    <div class="ethics-label">chain of command violation</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Eustis cannot reach Brown or Curry (both en route home). He calls Ellis &mdash; an admiral on convalescent leave with no operational authority. Ellis responds: "In view of the nature of present arrangements with them and in the interest of not fouling up any of our arrangements as far as the fishing situation is concerned, I think they should know this and if they choose to do nothing, keep him on board, otherwise put him back." Ellis acknowledges after the call that he has "interjected himself between Brown and Eustis." Morehouse (USCG HQ observer present on the ship) had advised Eustis to contact Washington &mdash; Eustis instead calls the one officer he is confident will give him a clear answer.
+      <div class="ethics-note">Ethics dimension: Ellis continues to exercise command authority he does not have. Eustis's failure to escalate to the Commandant &mdash; despite having a HQ observer on board advising exactly that &mdash; means the highest levels of the service remain uninformed while a flag officer on sick leave makes operational decisions. The Commandant's ruling later notes USCG HQ "might well have insisted on more definite guidance from State Department" &mdash; but HQ was never given the chance because Brown and Ellis kept the matter at the district level.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">5:20 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Soviet officers in Eustis's cabin &mdash; know defector is aboard, make no demand yet</div>
+    <div class="card-actors">Fleet Cmdr. Burkal, interpreter Baltrunar, Gordon, Obolensky</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Four Soviets (including Lithuanian Fleet Commander Burkal) sit quietly in Eustis's cabin. No one mentions Kudirka. At 5:45 pm Soviets indicate to Obolensky they are aware a crewman is aboard Vigilant. Eustis told. Soviets still make no formal demand for return.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">5:40 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Vigilant calls Woods Hole for small craft &mdash; "utmost political importance"</div>
+    <div class="card-actors">Eustis &rarr; Woods Hole CG Group</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">At 5:44 pm Woods Hole calls RCC First District duty officer Lt. Ryan to verify reason for request. Ryan tells them to have a 44-footer stand by. Ellis, ending his 5:15 call, tells Ryan to contact Brown about the Ellis-Eustis conversation.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">5:47 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Ryan tries to reach Brown at home &mdash; not yet arrived</div>
+    <div class="card-actors">Ryan &rarr; Brown (residence)</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Brown arrives home around 6:00 pm and immediately calls Ryan back. Ryan tells Brown about the Ellis-Eustis conversation and Ellis's return instructions. Brown comments the preferred course might be to keep the defector and take him to New Bedford &mdash; but ultimately defers to Ellis's direction rather than asserting his own authority as Acting District Commander.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening key">
+  <div class="time-col">6:15 pm</div>
+  <div class="dot key"></div>
+  <div class="card key">
+    <div class="card-title">Eustis calls Brown &mdash; "defector sincere, will go over side if returned"</div>
+    <div class="card-actors">Eustis &rarr; Brown</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Eustis tells Brown: defector and 4 Soviets aboard, Kudirka is sincere, Soviets know he's aboard, and Kudirka has said regardless of what Coast Guard does he will jump overboard if returned. Brown: "This is a situation which is going to have to be resolved by the State Department." Instructs Eustis to ask Soviets to return to their ship. Tells Ryan to wait before calling Flag Plot at USCG HQ.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening ethics">
+  <div class="time-col">6:38 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Brown calls Ellis but omits that the Commandant wants to be kept advised</div>
+    <div class="card-actors">Brown &rarr; Ellis</div>
+    <div class="ethics-label">material omission</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Brown calls Ellis to report what Eustis said. He tells Ellis he had instructed Eustis to keep the defector in seclusion and ask the Soviets to leave, to give First District time to contact the Commandant. However, Brown did NOT tell Ellis that the Commandant had directed itself to be kept advised of developments. Ellis therefore continued operating as if the matter was properly contained at the district level. Ellis responds: Vigilant should not return the man without a formal Soviet request, but if they request, comply.
+      <div class="ethics-note">Ethics dimension: A subordinate who withholds from a senior advisor &mdash; even an unauthorized one &mdash; information that would materially affect that advisor's recommendations is engaging in selective disclosure. Brown's omission allowed Ellis to continue making consequential recommendations without the full picture. The Board of Investigation cited Brown's failure to keep the Commandant informed as one of the core charges against him.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">6:45 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Brown calls Pakos &mdash; if Soviets request return, comply; Brown calls Ellis again at 6:48</div>
+    <div class="card-actors">Brown &rarr; Pakos; Brown &rarr; Ellis</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Brown: if Soviets have requested defector's return, the man is to be returned. Brown calls Ellis at 6:48 to report Kudirka's statement about going over the side if returned. Ellis: "I don't think we have any reason to believe that this would happen. They are not barbarians." Decision to return if requested is not altered.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">6:54 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Eustis calls Brown &mdash; Soviets have not made formal request yet; Gordon's advice rejected</div>
+    <div class="card-actors">Eustis &rarr; Brown</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Eustis states his opinion that Kudirka's life will be in jeopardy if returned. Brown directs Eustis to get a positive answer from the Soviet master. Mr. Gordon (NMFS delegate) offers his informed opinion &mdash; Brown says Gordon "has no responsibility in the case." Conversation ends at 7:28 pm.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">7:30 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Brown calls Ellis &mdash; "Kudirka's life would be in jeopardy if returned"</div>
+    <div class="card-actors">Brown &rarr; Ellis</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Ellis: "I don't think we have any reason to believe that this would happen. They are not barbarians." This call concludes Ellis's involvement for 23 November 1970. He makes no further calls. The Commandant's ruling later states Ellis "adhered to his position firmly and even stubbornly in spite of the fact that he was informed that principal staff officers were not in agreement with his position."</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">8:00 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Soviets present formal written request &mdash; claim theft of 3,000 rubles; no rubles found on Kudirka</div>
+    <div class="card-actors">Soviet Capt. Popov &rarr; Eustis, Gordon</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Written document signed by Capt. Popov: "The radio operator KUDIRKA penetrated into my stateroom, forced the safe, took money from the safe in the amount of 3,000 rubles jumped over the fender and hid on your vessel. Request you conduct a search and return him to my vessel." No rubles were found on Kudirka &mdash; directly contradicting the theft claim. Eustis considers this satisfies Brown's requirement of a "formal request."</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">8:04 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Gordon and Obolensky propose carrying Kudirka to mainland &mdash; Eustis does not act on it</div>
+    <div class="card-actors">Gordon, Obolensky, Morehouse</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Gordon and Obolensky suggest to Eustis: carry Kudirka to U.S. mainland and require Soviets to seek his return through diplomatic channels. Morehouse again advises State Dept. should be contacted. Gordon tries to call a personal State Dept. contact &mdash; cannot reach him. Eustis does not act on this alternative, which would have been lawful and consistent with standing U.S. refugee policy.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening key">
+  <div class="time-col">8:19 pm</div>
+  <div class="dot key"></div>
+  <div class="card key">
+    <div class="card-title">Eustis calls Brown &mdash; intends to return Kudirka per Soviet request</div>
+    <div class="card-actors">Eustis &rarr; Brown</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Eustis informs Brown: he has the written Soviet request, he intends to return the defector, will escort Soviet ship out of territorial waters, and if Kudirka jumps overboard afterward the Vigilant will stand clear unless life is in danger. Brown: "Proceed in accordance with your total message." Ryan suggests contacting USCG HQ &mdash; Brown concurs at 8:24 pm.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">8:24 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Ryan calls Flag Plot at USCG HQ &mdash; defector being returned in Soviet custody</div>
+    <div class="card-actors">Ryan &rarr; Tritbough (Flag Plot duty officer)</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Ryan reports defector got aboard, asked to remain, is being returned at request of Soviet master in custody of Soviet officials. Notes defector does not want to go back and may jump overboard.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening ethics">
+  <div class="time-col">8:30 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Hammond concludes case is already closed &mdash; three hours before actual return; Commandant stood down</div>
+    <div class="card-actors">Tritbough &rarr; Hammond, Sargent, Commandant</div>
+    <div class="ethics-label">premature closure</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Tritbough calls Hammond, Sargent, and the Commandant within 15 minutes. Hammond concludes from the briefing that the return has already occurred or is imminent, and the case is closed. He also incorrectly concludes Kudirka voluntarily returned. Both conclusions are wrong &mdash; the actual return will not happen for over 3 more hours, during which time Kudirka is beaten, struggles violently, and is forcibly subdued. The Commandant and VADM Sargent receive no further calls that night.
+      <div class="ethics-note">Ethics dimension: A senior officer who receives information indicating a sensitive situation "appears resolved" has an obligation to verify before standing down &mdash; especially when the original situation involved potential harm to a human being. Hammond's premature closure removed the Commandant from the decision loop just as the most critical phase was beginning.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening ethics">
+  <div class="time-col">8:45 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Tritbough-McGuire State Dept. call &mdash; disputed record, neither tape recorder was functioning</div>
+    <div class="card-actors">Tritbough &rarr; McGuire (State Dept. Ops Center)</div>
+    <div class="ethics-label">disputed record</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Tritbough calls the State Dept. Operations Center. He says he told McGuire the defector "is being returned." McGuire says Tritbough told him the case had been "resolved." McGuire claims he read back a summary and Tritbough approved it &mdash; Tritbough denies this. Neither the senior nor assistant watch officer at the Ops Center had received specific instructions about the case. Neither tape recorder (at Flag Plot or Ops Center) was functioning. State Ops Center posts no urgent action.
+      <div class="ethics-note">Ethics dimension: The absence of functioning recording equipment at both duty stations means the dispute between Tritbough and McGuire cannot be resolved. This illustrates the institutional failure to maintain adequate communications infrastructure for exactly the kind of sensitive real-time situations these watch centers exist to handle.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">9:00 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Eustis tells Soviet officers: "He's all yours" &mdash; Soviets try and fail to persuade Kudirka</div>
+    <div class="card-actors">Eustis, Soviet Fleet Cmdr. Burkal</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">After his last conversation with Brown, Eustis tells the Soviets they can take Kudirka. Soviets try to persuade Kudirka to return voluntarily &mdash; he vehemently refuses. By 9:30 pm Soviets are unable to persuade him. Soviets ask Eustis to use his own crewmen to remove Kudirka &mdash; Eustis refuses. Soviets request permission to call Soviet Embassy in Washington.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening">
+  <div class="time-col">9:45 pm</div>
+  <div class="dot evening"></div>
+  <div class="card evening">
+    <div class="card-title">Call placed to Soviet Embassy from Vigilant &mdash; 5-minute open line, no communication passed</div>
+    <div class="card-actors">Vigilant radioman &rarr; Soviet Embassy Washington</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Soviets request a call to their Embassy. Radioman places call (misunderstanding Eustis's intent &mdash; Eustis wanted to notify Coast Guard and State first). Telephone patch between Vigilant and Soviet Embassy remains open approximately 5 minutes. No communication is passed.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening key ethics">
+  <div class="time-col">~10:00 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Eustis decides NOT to send Pakos draft message to Commandant &mdash; the path not taken</div>
+    <div class="card-actors">Eustis, Pakos</div>
+    <div class="ethics-label">critical path not taken</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Lt. Cmdr. Pakos drafts a message recommending a clear alternative: the Vigilant should depart with Kudirka aboard and require the State Department to determine his disposition. Pakos proposes sending it to First District with an information copy to the Commandant. Eustis decides NOT to send the message. His stated reason: sending an information copy to the Commandant would bypass the chain of command. He assumes USCG HQ has been kept properly informed. Instead, the key points are reduced to notes for Eustis to reference in his next call to Brown &mdash; and Brown cuts him off before he can deliver them all.
+      <div class="ethics-note">Ethics dimension: This is arguably the most consequential single decision of the entire incident. Eustis had a lawful, viable alternative in hand. His concern for chain-of-command propriety &mdash; in a situation where the chain of command had already been corrupted by an unauthorized flag officer &mdash; caused him to suppress the one action that might have elevated the decision to a level with the authority and context to resolve it correctly. The irony is acute: Eustis's rigorous respect for formal hierarchy, in a situation where that hierarchy was already broken, produced the worst possible outcome.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="evening key ethics">
+  <div class="time-col">10:14 pm</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Brown issues final order: "You have no discretion. Use whatever force is necessary. Do not let an incident occur."</div>
+    <div class="card-actors">Brown &rarr; Eustis</div>
+    <div class="ethics-label">unlawful order / misinterpretation</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Eustis calls Brown to explain force will be necessary and begins communicating three key points (Soviets reluctant to use own men; Soviets want to call Embassy; recommend retaining Kudirka). Brown cuts him off: "You have your orders. You have no discretion. Use whatever force is necessary. Do not let an incident occur." Eustis concludes he has received a direct order and must comply. He subsequently allows Soviet crewmen to board the Vigilant and exercise authority over Kudirka.
+      <div class="ethics-note">Ethics dimension: Two separate failures. Brown's order was ambiguous &mdash; "use whatever force is necessary" does not explicitly authorize foreign nationals to board and control a U.S. government vessel. The Commandant's ruling is explicit: "I cannot conceive of any commanding officer interpreting orders authorizing the use of necessary force so as to permit foreign nationals to exercise authority on board a Coast Guard vessel." Eustis erred in his interpretation. Brown's order was also legally problematic &mdash; directing the return of a person who had requested asylum, in U.S. territorial waters, without State Dept. guidance, may itself have constituted an unlawful order under domestic law and treaty obligations the U.S. had assumed.</div>
+    </div>
+  </div>
+</div>
+
+<div class="phase-label">Night &mdash; the return</div>
+
+<div class="entry" data-phase="night">
+  <div class="time-col">10:30 pm</div>
+  <div class="dot night"></div>
+  <div class="card night">
+    <div class="card-title">Five Soviet crewmen board Vigilant (Eustis authorized three)</div>
+    <div class="card-actors">Soviet sailors, Eustis, Ensign Hughes</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Eustis authorized 3 Soviet crewmen; 5 board instead. They bring a blanket, rope, and material to gag Kudirka. At 10:45 pm Eustis escorts Soviets to Kudirka &mdash; Kudirka again refuses, asks for a knife to kill himself (denied). Eustis turns him over. Kudirka removes shirt, empties pockets, gives all personal possessions to Eustis. No rubles found &mdash; contradicting the Soviet theft claim.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="night">
+  <div class="time-col">10:50 pm</div>
+  <div class="dot night"></div>
+  <div class="card night">
+    <div class="card-title">Kudirka breaks free &mdash; "man overboard" sounded; Vigilant unmoors; mooring lines cut with axes</div>
+    <div class="card-actors">Kudirka, Soviet sailors, Hughes, CG crewmen</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Near captain's cabin Kudirka breaks free and tries to enter the cabin where the U.S. civilian delegation is. Mr. Brieze (Latvian-American, himself a refugee) tries to push Soviets away. Gordon tells Brieze there are orders and they must not interfere. Kudirka escapes to port boat deck, swings down to main deck. "Man overboard" sounded &mdash; Kudirka did not go into water but crew thinks he did. Vigilant unmoors immediately; mooring lines cut with axes. Boom net from Soviet ship knocks down Vigilant's antennas and damages stanchions.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="night">
+  <div class="time-col">11:00 pm</div>
+  <div class="dot night"></div>
+  <div class="card night">
+    <div class="card-title">Soviets subdue Kudirka on fantail &mdash; Hughes intervenes repeatedly to stop beatings</div>
+    <div class="card-actors">Soviet sailors, Ensign Hughes, Kudirka</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Kudirka caught on fantail by two CG sailors. Soviets drag him up ladder striking his head on steel handrails. Ensign Hughes stops Soviets beating Kudirka multiple times by communicating through the English-speaking Soviet second mate. Soviets wrap Kudirka in blanket, tie with rope including a line around his neck. Hughes stops them tying him to a winch. Kudirka subdued by 11:15 pm. Eustis visits Kudirka bound in blanket and expresses personal sympathy.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="night">
+  <div class="time-col">11:30 pm</div>
+  <div class="dot night"></div>
+  <div class="card night">
+    <div class="card-title">Mainland (State Dept.) calls Tritbough &mdash; asks if there are new developments</div>
+    <div class="card-actors">Mainland &rarr; Tritbough</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Tritbough informs Mainland he has received no new information. This is State Dept.'s only outreach after the decision to return was made &mdash; and it comes after the beating, after Kudirka was subdued, and while he is being transported to the Soviet ship. Pakos also calls Brown at 11:30 to get permission to use Vigilant's small boat to transfer the Soviets and Kudirka. Brown authorizes.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="night">
+  <div class="time-col">11:40 pm</div>
+  <div class="dot night"></div>
+  <div class="card night">
+    <div class="card-title">Kudirka loaded into small boat &mdash; face down, bound in blanket, Soviet sitting on his head</div>
+    <div class="card-actors">Hughes (boat detail), Soviet sailors, Kudirka</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Two or three Soviets throw Kudirka, still bound in blanket, 2-3 feet into the boat. He lands face down. One Soviet sits on his head. Crew do not know if he is conscious. Boat lowered into water at 11:41 pm. One Soviet strikes Kudirka during the crossing. Ensign Hughes in command of the unarmed boat detail.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="night key">
+  <div class="time-col">11:50 pm</div>
+  <div class="dot key"></div>
+  <div class="card key">
+    <div class="card-title">Kudirka transferred to Sovetskaya Litva &mdash; thrown into net, hauled to deck</div>
+    <div class="card-actors">Vigilant boat crew, Soviet ship</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Soviet ship lowers a net. Soviets throw Kudirka into the net which is raised to the deck. From this point Vigilant's boat crew cannot observe what happens to him. Small boat returns to Vigilant at 11:55 pm. Vigilant escorts Soviet vessel to international waters at 12:00 am. Soviet captain sends a bottle of Johnnie Walker Red Scotch to Eustis. Eustis later cannot remember what he did with it.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="night">
+  <div class="time-col">1:05 am</div>
+  <div class="dot night"></div>
+  <div class="card night">
+    <div class="card-title">Vigilant sends message: transfer accomplished at 11:55 pm</div>
+    <div class="card-actors">Vigilant &rarr; First District</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Official message on 24 November 1970 reporting completion of transfer. Eustis tells the civilians aboard he feels badly about what happened and hopes the incident will be forgotten. Kudirka would be tried in the Soviet Union for treason in May 1971 and sentenced to 10 years of hard labor.</div>
+  </div>
+</div>
+
+<div class="entry" data-phase="night">
+  <div class="time-col">3:30 am</div>
+  <div class="dot night"></div>
+  <div class="card night">
+    <div class="card-title">Vigilant moors at New Bedford &mdash; Fidell interviews Eustis without Article 31 warnings</div>
+    <div class="card-actors">Eustis, Vigilant crew, Lt. Cmdr. Fidell</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Tuesday 24 November 1970. Lt. Cmdr. Fidell (District Legal Officer) meets Vigilant at State Pier in New Bedford and interviews Eustis &mdash; without giving him Article 31 UCMJ warnings. Fidell later publicly states he has "regretted the violation of his rights ever since." Congressional hearings begin December 3, 1970.</div>
+  </div>
+</div>
+
+<div class="phase-label">Aftermath &mdash; accountability</div>
+
+<div class="entry" data-phase="night ethics">
+  <div class="time-col">Dec 17&ndash;21</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">Three-level accountability chain &mdash; Board recommends court-martial; Commandant agrees; Secretary overrules both</div>
+    <div class="card-actors">Board of Investigation &rarr; Commandant &rarr; Sec. Transportation Volpe</div>
+    <div class="ethics-label">accountability system</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Board of Investigation recommended: General Court-Martial for Brown (dereliction); Punitive Letter for Ellis (poor advice); Administrative Letter for Eustis. The Commandant partially concurred but escalated &mdash; finding Ellis's conduct also warranted court-martial charges, not merely a letter. He offered both Brown and Ellis the option to retire in lieu of trial. Secretary of Transportation Volpe then overruled the Commandant entirely on the court-martial question, directing punitive letters only for both Brown and Ellis. Eustis received a non-punitive (administrative) letter and was transferred to shore duty. Edward Killham at State Dept. faced no formal consequences.
+      <div class="ethics-note">Ethics dimension: The graduated accountability process reveals a system under political pressure. The Commandant &mdash; the military professional &mdash; found court-martial warranted. The civilian Secretary overrode him, citing that both officers had "already suffered" public censure and their families had been through enough. The result: no one faced a court. Mann notes the Coast Guard was "far more unforgiving of its people in this case than was the State Department" &mdash; where the officer whose passive guidance most directly enabled the outcome faced no accountability at all.</div>
+    </div>
+  </div>
+</div>
+
+<div class="entry" data-phase="night ethics">
+  <div class="time-col">Jan 1971+</div>
+  <div class="dot ethics"></div>
+  <div class="card ethics">
+    <div class="card-title">State Dept. issues asylum procedures to Coast Guard &mdash; the doctrine that should have existed before</div>
+    <div class="card-actors">State Dept. &rarr; USCG and all federal agencies</div>
+    <div class="ethics-label">corrective action</div>
+    <div class="expand-hint">click for detail</div>
+    <div class="card-detail">Subsequent to 23 November 1970, the Department of State issued to the Coast Guard and all U.S. departments and agencies that had not previously been involved in refugee affairs formal procedures for handling requests for political asylum from foreign nationals. Mann's article proposes a four-step framework for any U.S. commander confronted by an asylum seeker: (1) grant temporary asylum and retain in U.S. custody; (2) ascertain facts; (3) immediately report to superior authority; (4) retain pending directives from competent authority. These recommendations and the PD-27 interagency coordination process (signed 1978) are the direct institutional legacy of the Kudirka incident.
+      <div class="ethics-note">Ethics dimension: The corrective guidance issued after the incident is precisely what should have been in place before it. Every failure of 23 November &mdash; Ellis's uninformed advice, Brown's deference, Killham's narrow guidance, the absence of doctrine for Eustis &mdash; could have been mitigated by standing procedures. Individual accountability after an incident cannot substitute for institutional doctrine before it.</div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<footer>
+  Source: Clyde R. Mann, "Asylum Denied: The Vigilant Incident," Naval War College Review, Vol. 23, No. 9 (May 1971) / International Law Studies Vol. 62 (1980). Appendix I chronology and article body. Prepared for reference and research use.
+</footer>
+
+<script>
+document.querySelectorAll('.card').forEach(c=>{
+  c.addEventListener('click',()=>{c.classList.toggle('open')});
+});
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const f=btn.dataset.filter;
+    document.querySelectorAll('.entry').forEach(e=>{
+      if(f==='all'){e.classList.remove('hidden');return;}
+      const phases=e.dataset.phase.split(' ');
+      e.classList.toggle('hidden',!phases.includes(f));
+    });
+    document.querySelectorAll('.phase-label').forEach(lbl=>{
+      if(f==='all'||f==='key'||f==='ethics'){lbl.style.display='';return;}
+      const txt=lbl.textContent.toLowerCase();
+      lbl.style.display=(txt.includes(f)||(f==='afternoon'&&(txt.includes('midday')||txt.includes('afternoon'))))?'':'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
